@@ -13,4 +13,4 @@ data = pd.read_csv(url, delim_whitespace=True, header=None,
                         "acceleration", "model year", "origin", "car name"])
 
 # Clean the above data by removing redundant columns and rows with junk values
-# Compare the performance of your model with the decision tree module from scikit learn 
+# Compare the performance of your model with the decision tree module from scikit learn

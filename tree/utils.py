@@ -40,25 +40,25 @@ def information_gain(Y: pd.Series, attr: pd.Series) -> float:
 
 def opt_split_attribute(X: pd.DataFrame, y: pd.Series, criterion, features: pd.Series):
     """
-    Function to find the optimal attribute to split about
-    If needed you can split this function into 2, one for discrete and one for real valued features
-    You can also change the parameters of this function according to your implementation
+    Function to find the optimal attribute to split about.
+    If needed you can split this function into 2, one for discrete and one for real valued features.
+    You can also change the parameters of this function according to your implementation.
 
     features: pd.Series is a list of all the attributes we have to split upon
 
     return: attribute to split upon
     """
 
-    # According to wheather the features are real or discrete valued and the criterion, find the attribute from the features series with the maximum information gain or minimum gini index.
+    # According to wheather the features are real or discrete valued and the criterion, find the attribute from the features series with the maximum information gain (entropy or varinace based on the type of output) or minimum gini index (discrete output).
 
     pass
 
 
 def split_data(X: pd.DataFrame, y: pd.Series, attribute, value):
     """
-    Funtion to split the data according to an attribute
-    If needed you can split this function into 2, one for discrete and one for real valued features
-    You can also change the parameters of this function according to your implementation
+    Funtion to split the data according to an attribute.
+    If needed you can split this function into 2, one for discrete and one for real valued features.
+    You can also change the parameters of this function according to your implementation.
 
     attribute: attribute/feature to split upon
     value: value of that attribute to split upon
